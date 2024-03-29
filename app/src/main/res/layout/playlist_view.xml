@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_15sdp"
+    app:strokeWidth="@dimen/_2sdp"
+    android:layout_margin="@dimen/_10sdp"
+    app:strokeColor="@color/color_pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/playlistImage"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:src="@mipmap/music_player_icon"
+            app:shapeAppearanceOverlay="@style/curved"
+            android:layout_gravity="center"
+            android:contentDescription="@string/song_image"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/playlistName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="@string/playlist_name"
+                android:contentDescription="@string/playlist_name"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:ellipsize="marquee"
+                android:layout_weight="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"/>
+
+            <ImageButton
+                android:id="@+id/playlistDeleteButton"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/delete_icon"
+                app:tint="@color/color_pink"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:contentDescription="@string/playlist_delete"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

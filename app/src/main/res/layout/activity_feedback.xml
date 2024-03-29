@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_16sdp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/topicFA"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:hint="@string/topic_feedback"
+        android:inputType="textEmailSubject"
+        android:gravity="center|start"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingHorizontal="@dimen/_16sdp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailFA"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:hint="@string/email_feedback"
+        android:inputType="textEmailAddress"
+        android:gravity="center|start"
+        android:paddingHorizontal="@dimen/_16sdp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/feedbackMessageFA"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:hint="@string/feedback"
+        android:gravity="center|start"
+        android:paddingHorizontal="@dimen/_16sdp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/send"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
